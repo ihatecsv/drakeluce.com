@@ -1,0 +1,68 @@
+body { margin: 0; }
+canvas { 
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index:1;
+}
+
+.descimg {
+	max-width: 100px;
+}
+
+@media (min-width: 1100px) {
+	.maxw {
+		width: 1000px;
+	}
+}
+
+.maxw {
+	z-index:3;
+	position: relative;
+}
+
+.img-profile {
+	padding-top: 20px;
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.fa {height:14px;width:14px;}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: rotating 1s linear infinite;
+}

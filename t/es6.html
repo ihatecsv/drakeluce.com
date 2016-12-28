@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ES6</title>
+	</head>
+	<body>
+		<p>ES6 is awesome.</p>
+		<p>You're gonna have to view the source to see what's going on.</p>
+		<script>
+			class Assistant {
+				constructor(name){
+					this.name = name;
+				}
+				
+				greet(){
+					return "Hello " + this.name + "!";
+				}
+			}
+			
+			class ClassyAssistant extends Assistant{
+				greet(){
+					return "Greetings " + this.name + ".";
+				}
+			}
+			
+			let a = new ClassyAssistant(prompt("What's your name?"));
+			alert(a.greet());
+		</script>
+	</body>
+</html>
